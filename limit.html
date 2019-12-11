@@ -1,0 +1,36 @@
+<html>
+    
+    
+    
+    <head>
+        <title>limittt</title>
+    </head>
+    <body>
+        <script>
+           var num1,num2,even=0,odd=0;
+           var num1=window.prompt("insert 1st value","0");
+            //var num2=window.prompt("insert 2nd value","50");
+            if(num1<1 || num1>10){
+             var num1=window.prompt("insert 1st number between 1-10","0");
+            }
+            
+            var num2=window.prompt("insert 2nd value","0");
+            if(num2<30 || num2>40){
+             var num2=window.prompt("insert  2nd number between 30-40","0");
+          }
+          for (i = num1; i <= num2; i++)
+                if(i%2==0){
+                    console.log("even :" +i);
+                   even++;
+                }
+            for (i = num1; i <= num2; i++)
+                if(i%2!=0){
+                    console.log("odd :" +i);
+                   odd++;
+                }
+                 console.log("number of even no is:"+even);
+              console.log("number of odd no is:"+odd);
+           
+        </script>
+    </body>
+</html>

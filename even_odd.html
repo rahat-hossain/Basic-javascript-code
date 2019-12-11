@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Even_Odd</title>
+	</head>
+		<body>
+			<script>
+				var a,b,count;
+			    a=window.prompt("insert 1st value of your range","0");
+				b=window.prompt("insert last value of your range","0");
+				a=parseInt(a);
+				b=parseInt(b);
+				for(count=a;count<=b;count++)
+				{
+					if(count%2==0)
+					{
+						console.log("number=",+count+("-->[Even]"));
+					}	
+					else
+					{
+						console.log("number=",+count+("-->(ODD)"));
+					}
+				}
+				
+				
+			</script>
+		</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>variable</title>
+	</head>
+	<body>
+		<script>
+			function redirect1()
+					{
+					window.location="http://www.google.com";
+					}			
+			function redirect2()
+					{
+					window.location="http://www.uoda.edu .bd";
+					}
+
+	        function getconf()
+						{
+							var cf=confirm("do you want to go?");
+							if(cf==true)
+							{
+								document.write("wait 10 seconds");
+								setTimeout("redirect1()",10000);
+							}
+							else
+							{
+							document.write("wait 11 seconds");
+								setTimeout("redirect2()",10000);
+							}
+							
+						}			
+						getconf();
+		</script>
+	</body>
+	
+	
+</html>

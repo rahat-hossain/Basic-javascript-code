@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>javascript</title>
+	</head>
+		<body>
+			<script>
+			function redirect()
+			{
+			window.location="http://google.com";
+			}
+			function redirect2()
+			{
+			window.location="http://youtube.com";
+			}
+			
+				function getConfirmation()
+				{
+					var cf=confirm("Do you want to go youtube?");
+				
+					if(cf==true)
+					{
+						document.write("you will be redirect in 10 sec");
+						//redirect2();
+						setTimeout("redirect2()",1000);
+				
+						return true;
+					}
+					else
+					{
+						document.write("waiting...");
+						setTimeout("redirect()",10000);
+						return false;
+					 }
+				}
+				getConfirmation();
+				
+				
+			</script>
+		</body>
+</html>
